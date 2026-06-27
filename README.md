@@ -166,10 +166,10 @@ Planned additions include:
 
 ## 🔗 Connect With Me
 
-- GitHub: [your-github-username](https://github.com/your-github-username)
-- LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-linkedin-profile)
-- Portfolio: [your-portfolio-link](https://your-portfolio-link)
-- Email: your-email@example.com
+- GitHub: https://github.com/S4SahilXO
+- LinkedIn: https://www.linkedin.com/in/sahil-pankaj/
+- Portfolio: Building 
+- Email: Sahilpankaj21@gmail.com
 
 ---
 
