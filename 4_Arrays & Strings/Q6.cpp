@@ -4,26 +4,25 @@ HINT
 freq[ch - 'a']++ for lowercase chars
 LOGIC INSIGHT — ASCII trick: 'a' = 97, so ch - 'a' maps 'a'→0, 'b'→1 ... 'z'→25. Elegant indexing.*/
 
-#include <stdio.h>
+#include <iostream>
+#include <string>
+using namespace std;
 
 int main() {
-    char str[100];
+    string str;
+    cout << "Enter a string: ";
+    cin >> str;
+
     int freq[26] = {0};
 
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            freq[str[i] - 'a']++;
-        }
+    for (char ch : str) {
+        if (ch >= 'a' && ch <= 'z')
+            freq[ch - 'a']++;
     }
 
-    printf("\nCharacter Frequencies:\n");
     for (int i = 0; i < 26; i++) {
-        if (freq[i] > 0) {
-            printf("%c = %d\n", i + 'a', freq[i]);
-        }
+        if (freq[i] > 0)
+            cout << char(i + 'a') << " = " << freq[i] << endl;
     }
 
     return 0;
